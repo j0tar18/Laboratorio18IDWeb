@@ -16,6 +16,8 @@ function cargarUsuarioPromesas() {
         });
 }
 
+cargarUsuarioPromesas();
+
 /*4. Usar fetch con async/await para leer datos de una API: crear una función cargarUsuario(), consultar
 al API jsonplaceholder sobre el usuario 10, convertir la respuesta a JSON y mostrar en consola el name,
 username y el email del usuario*/
@@ -34,6 +36,8 @@ async function cargarUsuarioAsync() {
     }
 }
 
+cargarUsuarioAsync();
+
 /*5. Manipular arreglos devueltos por AJAX: consultar todos los usuarios del API jsonplaceholder,
 mostrar en consola sólo los nombres de los usuarios. Usa un forEach para mostrarlos. Usar fetch con promesas*/
 
@@ -51,6 +55,7 @@ function cargarUsuariosPromesas() {
         })
 }
 
+cargarUsuariosPromesas();
 
 /*6. Manipular arreglos devueltos por AJAX: consultar todos los usuarios del API jsonplaceholder, mostrar
 en consola sólo los nombres de los usuarios. Usa un forEach para mostrarlos. Usar fetch con async/await*/
@@ -69,6 +74,8 @@ async function cargarUsuariosAsync() {
         console.error('Error al cargar nombres de usuarios:', error);
     }
 }
+
+cargarUsuariosAsync();
 
 /*7. Actualizar el DOM usando datos obtenidos por AJAX: crear un botón en HTML que diga: "Cargar usuario",
 cuando el usuario haga click en el botón obtener los datos del usuario 2, mostrar en el HTML nombre, email,
